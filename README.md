@@ -4,7 +4,9 @@
 
 Have OpenAI chat calls in your code? Need to run the prompts and test them out? Enter Prompt Plucker!
 
-Prompt Plucker is extension for Visual Studio Code easily extracts OpenAI prompts from code files for debugging.
+Prompt Plucker is extension for Visual Studio Code **easily extracts OpenAI prompts from code files for debugging**.
+
+![Demo of Prompt Plucker](images/demo.gif)
 
 How it works:
 1. Install [GitHub Copilot](https://github.com/features/copilot) and [Prompt Plucker](https://code.visualstudio.com/api/get-started/your-first-extension) in Visual Studio Code
