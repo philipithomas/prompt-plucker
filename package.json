@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "prompt-plucker.helloWorld",
-        "title": "Hello World"
+        "command": "prompt-plucker.pluckPrompt",
+        "title": "Pluck Prompt"
       }
     ]
   },
