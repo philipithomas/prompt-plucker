@@ -2,7 +2,7 @@
   "name": "prompt-plucker",
   "displayName": "Prompt Plucker",
   "description": "Easily extract OpenAI prompts from code files for debugging",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.95.0"
   },

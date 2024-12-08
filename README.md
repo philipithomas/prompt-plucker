@@ -1,71 +1,36 @@
-# prompt-plucker README
+# Prompt Plucker
 
-This is the README for your extension "prompt-plucker". After writing up a brief description, we recommend including the following sections.
+> ⚠️ **Warning**: This extension is in early development, and is not yet available in the Visual Studio Marketplace. So, it must be [installed manually](https://code.visualstudio.com/api/get-started/your-first-extension).
+
+Have OpenAI chat calls in your code? Need to run the prompts and test them out? Enter Prompt Plucker!
+
+Prompt Plucker is extension for Visual Studio Code easily extracts OpenAI prompts from code files for debugging.
+
+How it works:
+1. Install [GitHub Copilot](https://github.com/features/copilot) and [Prompt Plucker](https://code.visualstudio.com/api/get-started/your-first-extension) in Visual Studio Code
+2. Open a file with an OpenAI call in it
+3. Open the [Command Palette](https://docs.github.com/en/codespaces/reference/using-the-vs-code-command-palette-in-codespaces) and select "Prompt Plucker"
+4. Choose how you want to copy the prompt: as cURL or plaintext
+5. The prompt is copied to your clipboard, ready for testing 🎉
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+1. **Copy as cURL**: Extracts the OpenAI call from your code and convert it into a cURL statement. The cURL statement will include placeholders for parameters, making it easy to test and debug your prompts. The OpenAI API key is referenced as the `OPENAI_API_KEY` environment variable, so you can set it in your environment or pass it as a parameter.
 
-For example if there is an image subfolder under your extension project workspace:
+2. **Copy as Plaintext**: Extract the system, user, and bot messages from the OpenAI call as plaintext. This is useful for quickly reviewing and editing the prompts.
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+3. **Copy as Plaintext + Open Playground**: Copies the extracted plaintext messages to your clipboard, and then opens the OpenAI Playground in your default browser. This allows you to immediately test and refine your prompts in the Playground environment.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+* [GitHub Copilot](https://github.com/features/copilot) extension must be installed
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+* Only works with OpenAI Chat calls
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release of Prompt Plucker.
